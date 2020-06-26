@@ -1,9 +1,9 @@
 FROM alpine:3.5
 
-ENV FRONTEND_UUID=487a616a-b0a6-4541-936c-f51467d9f610
+ENV FRONTEND_UUID=1dba3c50-0148-4f18-8d8a-ad4dbc7c34cd
 ENV BACKEND_UUID=d1c32779-24c3-41ab-b77b-f7508d5d8f6d
 ENV V2RAY_PORT=9199
-ENV V2RAY_PATH=ray
+ENV V2RAY_PATH=cdhh
 
 RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && curl -L -H "Cache-Control: no-cache" -o /v2ray.zip https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip \
